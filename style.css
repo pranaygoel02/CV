@@ -4,10 +4,31 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 0.6em;
+}
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #196454 0%, #1da391 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100vw;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, #17554c 0%, #17554c 99%);
+}
+::-webkit-scrollbar-track{
+    background: none;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-track-piece:start {
+    background: #196454;
+ }
 body{
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +38,7 @@ body{
 }
 nav{
     height: 60px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 3;
     display: flex;
@@ -79,10 +100,11 @@ li{
 
 .landing-page{
     margin-top: 80px;
-    height: calc(100vh - 80px);
+    height: calc(100% - 80px);
     justify-content: center;
     align-items: center;
     font-size: 140px;
+    flex-wrap: wrap;
 }
 
 /*WATERMARK MARQUEE*/
@@ -225,12 +247,13 @@ li{
 }
 .scroll-down{
     position: absolute;
-    top: 85vh;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 #scroll{
     width: 50px;
