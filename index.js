@@ -86,10 +86,21 @@ $('#choice input').on('change', function(){
     }
 });
 
-//contact form
-$('#name').on('focus',function(){
-    $('#name-label').addClass('focus');
-});
-$('#name').off('focus',function(){
-    $('label').removeClass('focus');
-});
+const sectionOne = document.querySelector(".landing-section");
+const options = {
+    root: null,
+    threshold: 0.5,
+    rootmargin: "-150px"
+};
+const observer = new IntersectionObserver(function(entries,observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            console.log(entry.target);
+            $("#nav-title").text("Pranay Goel");
+        }
+        else{ 
+            $("#nav-title").text("Welcome");
+        }
+    });
+},options);
+observer.observe(sectionOne);
