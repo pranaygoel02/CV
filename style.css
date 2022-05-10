@@ -1071,3 +1071,262 @@ form{
     }
     
 }
+
+@media screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        display: none;
+        list-style: none;
+    }
+    .landing-page{
+        height: auto;
+        font-size: 120px;
+        display: flex;
+        flex-direction: column;
+    }  
+    .tilte{
+        padding: 20px;
+    }
+    .text-box{
+        width: 60vw;
+        padding: 10px 0;
+    }
+    .text-box h1{
+        width: 40%;
+        font-size: 0.8em;
+    }
+    #hi{
+        font-size: 0.5em;
+    }
+    .text-box p{
+        width: 100%;
+        padding: 50px 40px 20px;
+        font-size: 1.3rem;
+    }
+    .line{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 115%;
+    }
+    .man{
+        position: relative;
+        float: right;
+        width: 130%;
+        left: 150px;
+        top: 15px;
+    }
+    .planet{
+        width: 155px;
+        top: 210px;
+        right: -45px;
+    }
+    .webpage{
+        right: 40px;
+        top: 45px;
+        width: 100px;
+    }
+    .buttons{
+        padding: 10px 0px 10px 40px;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .btn{
+        width: 150px;
+        font-size: 1rem;
+        padding: 12px 5px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    /*About Me section*/
+    .about-me,.about-section{
+        height: 614px;
+    }
+    .left{
+        width: 90%;
+        padding: 20px 0px 0px 5px;
+        font-size: 120px;
+        height: auto;
+        background-image: url('images/my\ photo.jpeg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+        background-position: top left;
+    }
+    .right{
+        display: none;
+    }
+    .top{
+        font-size: 3rem;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .top h1{
+        padding: 40px 15px 20px;
+    }
+    #about-icon{
+        width: 70px;
+        transform: translateX(10px);
+    }
+    .about-para{
+        font-size: 1rem;
+        padding: 30px 40px 30px;
+        background: #020e1d67;
+        width: 400px;
+        text-align: justify;
+    }
+    .education, .education-section {
+        position: relative;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .edu-left,.edu-right{
+        width: 100%;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .edu-left h1{
+        text-indent: 0px;
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .credentials img{
+        width: 15%;
+        margin: 0px auto 10px;
+    }
+    .edu-right{
+        background: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .marks{
+        font-size: 4rem;
+    }
+    .description{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #choice{
+        display: flex;
+        flex-direction: row;
+    }
+    .radio input:checked{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #75AB9E;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills-left{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .skills-left img{
+        text-align: center;
+        padding: 300px 0px 40px 15px;
+        width: 450px;
+    }
+    #table{
+        width: 110vw;
+        border-radius: 0px;
+        height: 160px;
+    }
+    .skills-section{
+        margin-top: 100px;
+    }
+    .project-header p{
+        padding: 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projects h1{
+        padding-top: 20px;
+        font-size: 4rem;
+        margin-bottom: 2px;
+    }
+    .projects-info .project .left{
+        width: 100%;
+    }
+    .projects-info .project .right{
+        display: flex;
+        width: 100%;
+        background: red;
+        color: black;
+    }
+    .coding-profiles img{
+        width: 70px;
+    }
+    #profiles h1{
+        padding: 20px;
+        font-size: 3rem;
+    }
+    @keyframes logos{
+        0%{
+            transform: translateX(20%);
+        }
+        100%{
+            transform: translateX(-300%);
+        }
+    }
+    #profiles .line{
+        width: 100%;
+    }
+    .coding-profiles{
+        display: flex;
+        gap: 20px;
+    }
+    .contact .right{
+        position: absolute;
+        padding: 0px;
+        transform: translateX(53%) translateY(30px);
+        width: 100%;
+    }
+    .form .input-data .input-field{
+        width: 70%;
+    }  
+    .contact .left{
+        background-position: top left;
+        background-size: 100%;
+    }
+    
+    .contact .left h1{
+        opacity: 1;
+        position: relative;
+        color: black;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.26));
+        transform: rotate(-42deg) translateY(-100px);
+        width: 900px;
+        font-size: 6rem;
+        animation: animate3 10s linear infinite;
+    }
+    @keyframes animate3 {
+        0%{
+            transform: translateX(900px) rotate(0deg); 
+        }
+        100%{
+            transform: translateX(-1100px) rotate(0deg);
+        }
+    }
+    .contact .right h1{
+        margin-bottom: 20px;
+        font-size: 3.5rem;
+    }
+    .contact-card{
+        width: 100vw;
+    }
+    
+}
